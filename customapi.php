@@ -8,7 +8,7 @@ require_once("scripts/pi-hole/php/auth.php");
 check_cors();
 
 
-if(($auth) && ($_GET['auth'] !== $pwhash)){
+if(!($auth) || ($_GET['auth'] !== $pwhash)){
     header('Content-type: application/json');
     header("HTTP/1.0 401 Unauthorized");
     echo json_encode(array("error"=>array("error"=>"unauthorized","error_description"=>"An API key is required to use this resource, please provide a valid API key. The API key can be obtained in the admin panel.")));
