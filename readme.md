@@ -40,7 +40,7 @@ Added some extra API endpoints for managing clients and groups through a restAPI
 > | name      |  type     | data type               | description                                                           |
 > |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
 > | name      |  required | string                  | group name  |
-> | desc      |  optional | string | null           | group description  |
+> | desc      |  optional | string / null           | group description  |
 
 </details>
 
@@ -52,7 +52,7 @@ Added some extra API endpoints for managing clients and groups through a restAPI
 > | name      |  type     | data type               | description                                                           |
 > |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
 > | ip        |  required | string                  | device IP address  |
-> | comment   |  optional | string | null           | client comment  |
+> | comment   |  optional | string / null           | client comment  |
 
 </details>
 
@@ -64,9 +64,9 @@ Added some extra API endpoints for managing clients and groups through a restAPI
 > | name      |  type     | data type               | description                                                           |
 > |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
 > | id        |  required | int                     | group id  |
-> | name      |  required | string | null           | group name  |
+> | name      |  required | string / null           | group name  |
 > | desc      |  optional | string                  | group description  |
-> | status    |  required | int bool                | group status 1=enabled | 0=disabled (default)  |
+> | status    |  required | int bool                | group status 1=enabled / 0=disabled (default)  |
 
 </details>
 
@@ -78,7 +78,7 @@ Added some extra API endpoints for managing clients and groups through a restAPI
 > | name      |  type     | data type               | description                                                           |
 > |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
 > | id        |  required | int                     | client id  |
-> | comment   |  optional | string | null           | client comment  |
+> | comment   |  optional | string / null           | client comment  |
 > | groups    |  optional | array                   | array of group ids  |
 
 </details>
